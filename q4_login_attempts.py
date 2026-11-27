@@ -79,7 +79,7 @@ for attempt in attempts:
         print('ログイン成功', count,'回目')
         break
 else:
-     print('アカウントロック')
+    print('アカウントロック')
 
 
 
@@ -91,6 +91,31 @@ for i, attempt in enumerate(attempts, 1):
         print('ログイン成功', i,'回目')
         break
 else:
-     print('アカウントロック')
+    print('アカウントロック')
 
+
+
+attempts = ["abc", "xyz", "pass"]
+correct = "1234"
+
+count = 0
+for attempt in attempts:
+    count += 1
+    if correct == attempt:
+        print('ログイン成功', count,'回目')
+        break
+else:
+    print('アカウントロック')
+
+
+
+attempts = ["abc", "xyz", "1234"]
+correct = "1234"
+
+for i, attempt in enumerate(attempts, 1):
+    if correct == attempt:
+        print('ログイン成功', i,'回目')
+        break
+else:
+    print('アカウントロック')
 
