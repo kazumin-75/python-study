@@ -1,0 +1,33 @@
+2026-11-27T18:10:14.332-05:00
+Errors in file /u01/app/oracle/diag/rdbms/orcl/ORCL/trace/ORCL_ora_31042.trc  (incident=48291):
+ORA-00600: internal error code, arguments: [kcblasm_1], [103], [], [], [], [], [], [], [], [], [], []
+Incident details in: /u01/app/oracle/diag/rdbms/orcl/ORCL/incident/incdir_48291/ORCL_ora_31042_i48291.trc
+Use ADRCI or Support Workbench to package the incident.
+See Note 411.1 at My Oracle Support for error and packaging details.
+
+2026-11-27T18:12:03.719-05:00
+Hex dump of (file 4, block 14289) in trace file /u01/app/oracle/diag/rdbms/orcl/ORCL/trace/ORCL_dbw0_18427.trc
+Corrupt block relative dba: 0x010037d1 (file 4, block 14289)
+Bad check value found during buffer read
+Data in bad block:
+ type: 6 format: 2 rdba: 0x010037d1
+ last change scn: 0x0000.004a19b2 seq: 0x1 flg: 0x06
+ spare1: 0x0 spare2: 0x0 spare3: 0x0
+ consistency value in tail: 0x19b20601
+ check value in block header: 0x8a4f
+ computed block checksum: 0x2c11
+Errors in file /u01/app/oracle/diag/rdbms/orcl/ORCL/trace/ORCL_ora_31105.trc:
+ORA-01578: ORACLE data block corrupted (file # 4, block # 14289)
+ORA-01110: data file 4: '/u01/app/oracle/oradata/ORCL/users01.dbf'
+
+2026-11-27T18:14:49.905-05:00
+Errors in file /u01/app/oracle/diag/rdbms/orcl/ORCL/trace/ORCL_lgwr_18428.trc  (incident=48292):
+ORA-00470: LGWR process terminated with error
+ORA-00313: open failed for members of log group 2 of thread 1
+ORA-00312: online log 2 thread 1: '/u01/app/oracle/oradata/ORCL/redo02.log'
+ORA-27037: unable to obtain file status
+Linux-x86_64 Error: 2: No such file or directory
+Incident details in: /u01/app/oracle/diag/rdbms/orcl/ORCL/incident/incdir_48292/ORCL_lgwr_18428_i48292.trc
+LGWR (ospid: 18428): terminating the instance due to error 470
+System state dump requested by (instance=1, osid=18428 (LGWR)), summary=[abnormal instance termination].
+Instance terminated by LGWR, pid = 18428
